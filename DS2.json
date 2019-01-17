@@ -1,0 +1,1442 @@
+[
+    {
+        "Temperature": 40,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:20:26Z",
+        "RPM": 1511
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:20:36Z",
+        "RPM": 1548
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:20:46Z",
+        "RPM": 1549
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:20:56Z",
+        "RPM": 1554
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:21:06Z",
+        "RPM": 1567
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:21:16Z",
+        "RPM": 1603
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:21:26Z",
+        "RPM": 1604
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:21:36Z",
+        "RPM": 1612
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:21:46Z",
+        "RPM": 1626
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:21:56Z",
+        "RPM": 1648
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:22:06Z",
+        "RPM": 1671
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 20,
+        "_time": "2018-12-03T10:22:16Z",
+        "RPM": 1676
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 20,
+        "_time": "2018-12-03T10:22:26Z",
+        "RPM": 1711
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 21,
+        "_time": "2018-12-03T10:22:36Z",
+        "RPM": 1727
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:22:46Z",
+        "RPM": 1775
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:22:56Z",
+        "RPM": 1823
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:23:06Z",
+        "RPM": 1823
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:23:16Z",
+        "RPM": 1860
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:23:26Z",
+        "RPM": 1907
+    },
+    {
+        "Temperature": 51,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:23:36Z",
+        "RPM": 1922
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:23:46Z",
+        "RPM": 1901
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:23:56Z",
+        "RPM": 1898
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:24:06Z",
+        "RPM": 1857
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:24:16Z",
+        "RPM": 1839
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 22,
+        "_time": "2018-12-03T10:24:26Z",
+        "RPM": 1801
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 21,
+        "_time": "2018-12-03T10:24:36Z",
+        "RPM": 1773
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 20,
+        "_time": "2018-12-03T10:24:46Z",
+        "RPM": 1724
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:24:56Z",
+        "RPM": 1682
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:25:06Z",
+        "RPM": 1642
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:25:16Z",
+        "RPM": 1635
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:25:26Z",
+        "RPM": 1627
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:25:36Z",
+        "RPM": 1608
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:25:46Z",
+        "RPM": 1593
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:25:56Z",
+        "RPM": 1552
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:26:06Z",
+        "RPM": 1550
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:26:16Z",
+        "RPM": 1531
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:26:26Z",
+        "RPM": 1495
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:26:36Z",
+        "RPM": 1449
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:26:46Z",
+        "RPM": 1438
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:26:56Z",
+        "RPM": 1444
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:27:06Z",
+        "RPM": 1486
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:27:16Z",
+        "RPM": 1530
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:27:26Z",
+        "RPM": 1570
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:27:36Z",
+        "RPM": 1619
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:27:46Z",
+        "RPM": 1666
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:27:56Z",
+        "RPM": 1687
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:28:06Z",
+        "RPM": 1695
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:28:16Z",
+        "RPM": 1708
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:28:26Z",
+        "RPM": 1755
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:28:36Z",
+        "RPM": 1804
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:28:46Z",
+        "RPM": 1813
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:28:56Z",
+        "RPM": 1826
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:29:06Z",
+        "RPM": 1853
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:29:16Z",
+        "RPM": 1865
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:29:26Z",
+        "RPM": 1878
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:29:36Z",
+        "RPM": 1918
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:29:46Z",
+        "RPM": 1959
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 25,
+        "_time": "2018-12-03T10:29:56Z",
+        "RPM": 2021
+    },
+    {
+        "Temperature": 53,
+        "Pressure": 20,
+        "_time": "2018-12-03T10:30:06Z",
+        "RPM": 2315
+    },
+    {
+        "Temperature": 57,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:30:16Z",
+        "RPM": 2219
+    },
+    {
+        "Temperature": 55,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:30:26Z",
+        "RPM": 1945
+    },
+    {
+        "Temperature": 54,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:30:36Z",
+        "RPM": 1902
+    },
+    {
+        "Temperature": 52,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:30:46Z",
+        "RPM": 1899
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:30:56Z",
+        "RPM": 1886
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:31:06Z",
+        "RPM": 1847
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:31:16Z",
+        "RPM": 1823
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:31:26Z",
+        "RPM": 1790
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:31:36Z",
+        "RPM": 1758
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:31:46Z",
+        "RPM": 1754
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:31:56Z",
+        "RPM": 1723
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:32:06Z",
+        "RPM": 1680
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:32:16Z",
+        "RPM": 1674
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:32:26Z",
+        "RPM": 1655
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:32:36Z",
+        "RPM": 1625
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:32:46Z",
+        "RPM": 1619
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:32:56Z",
+        "RPM": 1582
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:33:06Z",
+        "RPM": 1541
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:33:16Z",
+        "RPM": 1520
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:33:26Z",
+        "RPM": 1477
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:33:36Z",
+        "RPM": 1452
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:33:46Z",
+        "RPM": 1405
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:33:56Z",
+        "RPM": 1388
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:34:06Z",
+        "RPM": 1403
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:34:16Z",
+        "RPM": 1435
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:34:26Z",
+        "RPM": 1460
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:34:36Z",
+        "RPM": 1508
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:34:46Z",
+        "RPM": 1541
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:34:56Z",
+        "RPM": 1581
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:35:06Z",
+        "RPM": 1588
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:35:16Z",
+        "RPM": 1591
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:35:26Z",
+        "RPM": 1607
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:35:36Z",
+        "RPM": 1648
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:35:46Z",
+        "RPM": 1681
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:35:56Z",
+        "RPM": 1691
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:36:06Z",
+        "RPM": 1727
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:36:16Z",
+        "RPM": 1737
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:36:26Z",
+        "RPM": 1753
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:36:36Z",
+        "RPM": 1792
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:36:46Z",
+        "RPM": 1823
+    },
+    {
+        "Temperature": 51,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:36:56Z",
+        "RPM": 1860
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:37:06Z",
+        "RPM": 1852
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:37:16Z",
+        "RPM": 1847
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:37:26Z",
+        "RPM": 1818
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:37:36Z",
+        "RPM": 1810
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:37:46Z",
+        "RPM": 1762
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:37:56Z",
+        "RPM": 1721
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:38:06Z",
+        "RPM": 1691
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:38:16Z",
+        "RPM": 1678
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:38:26Z",
+        "RPM": 1678
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:38:36Z",
+        "RPM": 1671
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:38:46Z",
+        "RPM": 1642
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:38:56Z",
+        "RPM": 1595
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:39:06Z",
+        "RPM": 1549
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:39:16Z",
+        "RPM": 1513
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:39:26Z",
+        "RPM": 1492
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:39:36Z",
+        "RPM": 1465
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:39:46Z",
+        "RPM": 1423
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:39:56Z",
+        "RPM": 1378
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:40:06Z",
+        "RPM": 1339
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:40:16Z",
+        "RPM": 1307
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:40:26Z",
+        "RPM": 1294
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:40:36Z",
+        "RPM": 1246
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:40:46Z",
+        "RPM": 1235
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 3,
+        "_time": "2018-12-03T10:40:56Z",
+        "RPM": 1194
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 2,
+        "_time": "2018-12-03T10:41:06Z",
+        "RPM": 1165
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 2,
+        "_time": "2018-12-03T10:41:16Z",
+        "RPM": 1194
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 3,
+        "_time": "2018-12-03T10:41:26Z",
+        "RPM": 1239
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:41:36Z",
+        "RPM": 1257
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:41:46Z",
+        "RPM": 1258
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:41:56Z",
+        "RPM": 1280
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:42:06Z",
+        "RPM": 1322
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:42:16Z",
+        "RPM": 1349
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:42:26Z",
+        "RPM": 1370
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:42:36Z",
+        "RPM": 1413
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:42:46Z",
+        "RPM": 1438
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:42:56Z",
+        "RPM": 1462
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:43:06Z",
+        "RPM": 1488
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:43:16Z",
+        "RPM": 1492
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:43:26Z",
+        "RPM": 1497
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:43:36Z",
+        "RPM": 1504
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:43:46Z",
+        "RPM": 1522
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:43:56Z",
+        "RPM": 1555
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:44:06Z",
+        "RPM": 1576
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:44:16Z",
+        "RPM": 1610
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:44:26Z",
+        "RPM": 1623
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:44:36Z",
+        "RPM": 1642
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:44:46Z",
+        "RPM": 1684
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:44:56Z",
+        "RPM": 1725
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:45:06Z",
+        "RPM": 1763
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:45:16Z",
+        "RPM": 1784
+    },
+    {
+        "Temperature": 51,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:45:26Z",
+        "RPM": 1818
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:45:36Z",
+        "RPM": 1781
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:45:46Z",
+        "RPM": 1734
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:45:56Z",
+        "RPM": 1689
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:46:06Z",
+        "RPM": 1658
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:46:16Z",
+        "RPM": 1655
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:46:26Z",
+        "RPM": 1643
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:46:36Z",
+        "RPM": 1634
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:46:46Z",
+        "RPM": 1621
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:46:56Z",
+        "RPM": 1582
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:47:06Z",
+        "RPM": 1559
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:47:16Z",
+        "RPM": 1523
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:47:26Z",
+        "RPM": 1485
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:47:36Z",
+        "RPM": 1471
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:47:46Z",
+        "RPM": 1424
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:47:56Z",
+        "RPM": 1397
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:48:06Z",
+        "RPM": 1374
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:48:16Z",
+        "RPM": 1349
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:48:26Z",
+        "RPM": 1314
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:48:36Z",
+        "RPM": 1280
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:48:46Z",
+        "RPM": 1273
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:48:56Z",
+        "RPM": 1255
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:49:06Z",
+        "RPM": 1232
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:49:16Z",
+        "RPM": 1189
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:49:26Z",
+        "RPM": 1163
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:49:36Z",
+        "RPM": 1158
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:49:46Z",
+        "RPM": 1154
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:49:56Z",
+        "RPM": 1121
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:50:06Z",
+        "RPM": 1102
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 3,
+        "_time": "2018-12-03T10:50:16Z",
+        "RPM": 1054
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 2,
+        "_time": "2018-12-03T10:50:26Z",
+        "RPM": 1042
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 1,
+        "_time": "2018-12-03T10:50:36Z",
+        "RPM": 1008
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 0,
+        "_time": "2018-12-03T10:50:46Z",
+        "RPM": 971
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 1,
+        "_time": "2018-12-03T10:50:56Z",
+        "RPM": 986
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 1,
+        "_time": "2018-12-03T10:51:06Z",
+        "RPM": 1028
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 2,
+        "_time": "2018-12-03T10:51:16Z",
+        "RPM": 1054
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 3,
+        "_time": "2018-12-03T10:51:26Z",
+        "RPM": 1077
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:51:36Z",
+        "RPM": 1104
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:51:46Z",
+        "RPM": 1112
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 4,
+        "_time": "2018-12-03T10:51:56Z",
+        "RPM": 1132
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:52:06Z",
+        "RPM": 1177
+    },
+    {
+        "Temperature": 39,
+        "Pressure": 5,
+        "_time": "2018-12-03T10:52:16Z",
+        "RPM": 1186
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 6,
+        "_time": "2018-12-03T10:52:26Z",
+        "RPM": 1193
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 7,
+        "_time": "2018-12-03T10:52:36Z",
+        "RPM": 1212
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:52:46Z",
+        "RPM": 1224
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 8,
+        "_time": "2018-12-03T10:52:56Z",
+        "RPM": 1264
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:53:06Z",
+        "RPM": 1287
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:53:16Z",
+        "RPM": 1331
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 9,
+        "_time": "2018-12-03T10:53:26Z",
+        "RPM": 1339
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 10,
+        "_time": "2018-12-03T10:53:36Z",
+        "RPM": 1377
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 11,
+        "_time": "2018-12-03T10:53:46Z",
+        "RPM": 1413
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:53:56Z",
+        "RPM": 1413
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:54:06Z",
+        "RPM": 1430
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:54:16Z",
+        "RPM": 1455
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:54:26Z",
+        "RPM": 1484
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:54:36Z",
+        "RPM": 1492
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:54:46Z",
+        "RPM": 1518
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:54:56Z",
+        "RPM": 1547
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:55:06Z",
+        "RPM": 1569
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:55:16Z",
+        "RPM": 1600
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:55:26Z",
+        "RPM": 1606
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:55:36Z",
+        "RPM": 1612
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:55:46Z",
+        "RPM": 1617
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:55:56Z",
+        "RPM": 1649
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:56:06Z",
+        "RPM": 1657
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:56:16Z",
+        "RPM": 1688
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:56:26Z",
+        "RPM": 1710
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 23,
+        "_time": "2018-12-03T10:56:36Z",
+        "RPM": 1959
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 25,
+        "_time": "2018-12-03T10:56:46Z",
+        "RPM": 2021
+    },
+    {
+        "Temperature": 53,
+        "Pressure": 20,
+        "_time": "2018-12-03T10:56:56Z",
+        "RPM": 2315
+    },
+    {
+        "Temperature": 57,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:57:06Z",
+        "RPM": 2219
+    },
+    {
+        "Temperature": 55,
+        "Pressure": 19,
+        "_time": "2018-12-03T10:57:16Z",
+        "RPM": 1945
+    },
+    {
+        "Temperature": 54,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:57:26Z",
+        "RPM": 1902
+    },
+    {
+        "Temperature": 52,
+        "Pressure": 18,
+        "_time": "2018-12-03T10:57:36Z",
+        "RPM": 1899
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 17,
+        "_time": "2018-12-03T10:57:46Z",
+        "RPM": 1886
+    },
+    {
+        "Temperature": 50,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:57:56Z",
+        "RPM": 1741
+    },
+    {
+        "Temperature": 49,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:58:06Z",
+        "RPM": 1697
+    },
+    {
+        "Temperature": 48,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:58:16Z",
+        "RPM": 1673
+    },
+    {
+        "Temperature": 47,
+        "Pressure": 16,
+        "_time": "2018-12-03T10:58:26Z",
+        "RPM": 1670
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:58:36Z",
+        "RPM": 1670
+    },
+    {
+        "Temperature": 46,
+        "Pressure": 15,
+        "_time": "2018-12-03T10:58:46Z",
+        "RPM": 1642
+    },
+    {
+        "Temperature": 45,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:58:56Z",
+        "RPM": 1617
+    },
+    {
+        "Temperature": 44,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:59:06Z",
+        "RPM": 1592
+    },
+    {
+        "Temperature": 43,
+        "Pressure": 14,
+        "_time": "2018-12-03T10:59:16Z",
+        "RPM": 1557
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:59:26Z",
+        "RPM": 1513
+    },
+    {
+        "Temperature": 42,
+        "Pressure": 13,
+        "_time": "2018-12-03T10:59:36Z",
+        "RPM": 1467
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:59:46Z",
+        "RPM": 1467
+    },
+    {
+        "Temperature": 41,
+        "Pressure": 12,
+        "_time": "2018-12-03T10:59:56Z",
+        "RPM": 1427
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 11,
+        "_time": "2018-12-03T11:00:06Z",
+        "RPM": 1389
+    },
+    {
+        "Temperature": 40,
+        "Pressure": 11,
+        "_time": "2018-12-03T11:00:16Z",
+        "RPM": 1382
+    }
+]
