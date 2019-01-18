@@ -33,7 +33,7 @@ def time_diff(time_later, time_earlier):
 
 		time_elapsed[i]=diff
 
-	return time_elapsed[0] + time_elapsed[1]*60 + time_elapsed[2]*3600
+	return 10+time_elapsed[0] + time_elapsed[1]*60 + time_elapsed[2]*3600
 
 
 
@@ -74,14 +74,19 @@ with open("data2.csv", "w") as target:
 	target.write(f'Temp\n')
 
 	for dic in data:
-		target.write(f'{dic["Pressure"]}, ')
-		target.write(f'{dic["RPM"]}, ')
-		
-		time_temp=dic["_time"]
+
+		pres=dic["Pressure"]
+		rpm=dic["RPM"]
+		time_current=dic["_time"]
+		temp=dic["Temperature"]
+			
 		if(base_time==-1):
-			base_time=time_temp
+			base_time=time_current
 
-		time_elapsed=time_diff(time_temp, base_time)
+		time_elapsed=time_diff(time_current, base_time)
 
+
+		target.write(f'{pres}, ')
+		target.write(f'{rpm}, ')
 		target.write(f'{time_elapsed}, ')
-		target.write(f'{dic["Temperature"]}\n')
+		target.write(f'{temp}\n')
