@@ -4,10 +4,7 @@ import pandas as pd
 from numpy import genfromtxt
 
 my_data = genfromtxt('data1.csv', delimiter = ',');
-time=[]
-press=[]
-rpm=[]
-temp=[]
+time = press = rpm = temp = [];
 
 firstRow = 0;
 for l in my_data:
@@ -24,30 +21,29 @@ rpm = np.array(rpm);
 time = np.array(time);
 temp = np.array(temp);
 
-deg = 2;
+deg = 3;
 
 x = np.ones(len(temp));
 i, p, a = 0, "", x;
-while i <= deg : 
-	j, q, b = 0, "", x;
-	while j <= deg :
-		k, s, c = 0, "", x;
-		while k <= deg :
+
+for i in range(0, deg) :
+	q, b = "", x;
+	for j in range(0, deg) :
+		s, c = "", x;
+		for k in range(0, deg) : 
 			if(i != 0 or j != 0 or k != 0) : 
 				x_axis = p + q + s;
 				x_axis = x_axis[:-1];
+				print(x_axis);
 				#plot and save graph
 				plt.plot(a*b*c, temp);
 				plt.xlabel(x_axis);
 				plt.ylabel('TEMP');
 				plt.savefig(x_axis + '.jpg')
 				plt.gcf().clear();
-			s += "TIMEx"
+			s += "TIMEx";
 			c = c * time;
-			k += 1;
-		q += "RPMx"
+		q += "RPMx";
 		b = b * rpm;
-		j += 1;
 	p += "PRESSx";
 	a = a * press;
-	i += 1;
