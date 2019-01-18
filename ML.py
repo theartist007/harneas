@@ -23,7 +23,7 @@ core_data_2=data_2[1:]
 
 core_data=core_data_1+core_data_2
 
-random.shuffle(core_data)
+#random.shuffle(core_data)
 
 dimension_1=len(core_data)
 dimension_2=len(core_data[0])
@@ -41,15 +41,15 @@ X_full=[list(i) for i in zip(*X_full)]
 
 size_full=len(Y_full)
 
-X_training=X_full[:int(0.6*size_full)]
-X_cv=X_full[int(0.6*size_full):int(0.8*size_full)]
-X_test=X_full[int(0.8*size_full):]
+X_training=X_full[:int(0.7*size_full)]
+X_cv=X_full[int(0.7*size_full):int(0.9*size_full)]
+X_test=X_full[int(0.9*size_full):]
 
-Y_training=Y_full[:int(0.6*size_full)]
-Y_cv=Y_full[int(0.6*size_full):int(0.8*size_full)]
-Y_test=Y_full[int(0.8*size_full):]
+Y_training=Y_full[:int(0.7*size_full)]
+Y_cv=Y_full[int(0.7*size_full):int(0.9*size_full)]
+Y_test=Y_full[int(0.9*size_full):]
 
-alphas=[x*0.1 for x in range(21)]
+alphas=[x*0.1 for x in range(10, 31)]
 opt_cost=-1
 
 for alpha in alphas:
@@ -67,6 +67,13 @@ for alpha in alphas:
 		opt_theta=reg.coef_
 
 print(opt_theta)
+
+Y_test_predicted=reg.predict(X_test)
+print(calculate_cost(Y_test_predicted, Y_test))
+
+for i in range(len(Y_test)):
+	print(f'{Y_test_predicted[i]} {Y_test[i]}')
+
 '''
 print(X_training)
 print("---------------------")

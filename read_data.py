@@ -68,12 +68,12 @@ with open("data1.csv", "w") as target:
 
 		target.write(f'{pres},')
 		target.write(f'{rpm},')
+		target.write(f'{time_elapsed},')
 		target.write(f'{rpm*rpm},')
 		target.write(f'{pres*rpm},')
 		target.write(f'{pres*rpm*rpm},')
 		target.write(f'{pres*pres*rpm},')
 		target.write(f'{pres*pres*rpm*rpm},')
-		target.write(f'{time_elapsed},')
 		target.write(f'{temp}\n')
 
 fileptr = open("DS2.json")
@@ -107,10 +107,10 @@ with open("data2.csv", "w") as target:
 
 		target.write(f'{pres},')
 		target.write(f'{rpm},')
+		target.write(f'{time_elapsed},')
 		target.write(f'{rpm*rpm},')
 		target.write(f'{pres*rpm},')
 		target.write(f'{pres*rpm*rpm},')
 		target.write(f'{pres*pres*rpm},')
 		target.write(f'{pres*pres*rpm*rpm},')
-		target.write(f'{time_elapsed},')
 		target.write(f'{temp}\n')
