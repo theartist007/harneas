@@ -1,3 +1,14 @@
+
+def calculate_cost(Y_predicted, Y_actual):
+
+	cost=0
+	number_of_terms=len(Y_predicted)
+	for i in range(number_of_terms):
+		cost=cost+(Y_predicted[i]-Y_actual[i])**2
+
+	return (cost/(number_of_terms))
+
+
 import csv
 import random
 from sklearn import linear_model
@@ -38,6 +49,24 @@ Y_training=Y_full[:int(0.6*size_full)]
 Y_cv=Y_full[int(0.6*size_full):int(0.8*size_full)]
 Y_test=Y_full[int(0.8*size_full):]
 
+alphas=[x*0.1 for x in range(21)]
+opt_cost=-1
+
+for alpha in alphas:
+	print(alpha)
+	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=True, copy_X=True)
+	reg.fit(X_training, Y_training)
+
+	Y_cv_predicted=reg.predict(X_cv)
+
+	this_alpha_cost=calculate_cost(Y_cv_predicted, Y_cv)
+	print(this_alpha_cost, end="\n\n")
+	if(this_alpha_cost<opt_cost or opt_cost==-1):
+		opt_alpha=alpha
+		opt_cost=this_alpha_cost
+		opt_theta=reg.coef_
+
+print(opt_theta)
 '''
 print(X_training)
 print("---------------------")
@@ -65,12 +94,3 @@ reg.fit(X, Y)
 print(reg.coef_)
 print(reg.predict([[23, 1922, 200]]))
 '''
-
-def calculate_cost(Y_predicted, Y_actual):
-
-	cost=0
-	number_of_terms=len(Y_predicted)
-	for i in range(number_of_terms):
-		cost=cost+(Y_predicted-Y_actual)**2
-
-	return (cost/(2*number_of_terms))
