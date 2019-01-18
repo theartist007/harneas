@@ -23,7 +23,7 @@ core_data_2=data_2[1:]
 
 core_data=core_data_1+core_data_2
 
-#random.shuffle(core_data)
+random.shuffle(core_data)
 
 dimension_1=len(core_data)
 dimension_2=len(core_data[0])
@@ -49,7 +49,7 @@ Y_training=Y_full[:int(0.7*size_full)]
 Y_cv=Y_full[int(0.7*size_full):int(0.9*size_full)]
 Y_test=Y_full[int(0.9*size_full):]
 
-alphas=[x*0.1 for x in range(10, 31)]
+alphas=[x*0.1 for x in range(0, 20)]
 opt_cost=-1
 
 for alpha in alphas:
@@ -73,7 +73,6 @@ print(calculate_cost(Y_test_predicted, Y_test))
 
 for i in range(len(Y_test)):
 	print(f'{Y_test_predicted[i]} {Y_test[i]}')
-
 '''
 print(X_training)
 print("---------------------")

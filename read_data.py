@@ -44,14 +44,14 @@ data=json.loads(fileptr.read())
 
 base_time=-1;
 with open("data1.csv", "w") as target:
-	target.write(f'Pressure,')
-	target.write(f'RPM,')
-	target.write(f'Time,')
-	target.write(f'RPM^2')
-	target.write(f'Pressure*RPM')
-	target.write(f'Pressure* RPM^2')
-	target.write(f'Pressure^2 *RPM')
-	target.write(f'Pressure^2 *RPM^2')
+	target.write(f'P,')
+	target.write(f'S,')
+	target.write(f'T,')
+	target.write(f'S^2')
+	target.write(f'PxS')
+	target.write(f'Px(S^2)')
+	target.write(f'(P^2) xS')
+	target.write(f'(P^2) x (S^2)')
 	target.write(f'Temp\n')
 
 	for dic in data:
@@ -82,14 +82,14 @@ data=json.loads(fileptr.read())
 base_time=-1
 with open("data2.csv", "w") as target:
 	
-	target.write(f'Pressure,')
-	target.write(f'RPM,')
-	target.write(f'Time,')
-	target.write(f'RPM^2')
-	target.write(f'Pressure*RPM')
-	target.write(f'Pressure* RPM^2')
-	target.write(f'Pressure^2 *RPM')
-	target.write(f'Pressure^2 *RPM^2')
+	target.write(f'P,')
+	target.write(f'S,')
+	target.write(f'T,')
+	target.write(f'S^2')
+	target.write(f'PxS')
+	target.write(f'Px(S^2)')
+	target.write(f'P^2 xS')
+	target.write(f'P^2 x S^2')
 	target.write(f'Temp\n')
 
 	for dic in data:
