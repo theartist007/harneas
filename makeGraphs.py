@@ -4,7 +4,10 @@ import pandas as pd
 from numpy import genfromtxt
 
 my_data = genfromtxt('data1.csv', delimiter = ',');
-time = press = rpm = temp = [];
+press = []
+rpm = []
+time = []
+temp = []
 
 firstRow = 0;
 for l in my_data:
