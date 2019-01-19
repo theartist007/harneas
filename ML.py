@@ -102,7 +102,8 @@ print(opt_alpha)
 print(scaler.scale_)
 print(scaler.mean_)
 
-print(scaler.transform([[21,	1657,	1320	,2745649	,34797,	57658629	,730737,	1210831209]]))
+print(scaler.transform([[18,	1665,	430,	2772225,	29970,	49900050,	539460,	898200900]]))
+print(reg.predict(scaler.transform([[18,	1665,	430,	2772225,	29970,	49900050,	539460,	898200900]])))
 '''
 
 print(X_training)
