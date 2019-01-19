@@ -100,15 +100,54 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Input File</h4>
+          <input type = "file" name = "myfile" data-supported-extensions = "json" > <br>
+          <button type= "button" onclick = "findConclusions()">Submit </button>
+          <p id = "demo"> </p>
           
           <!--Insert your JS related code here !-->
-
+          
         </div>
       </div>
 
     </div>
   </div>
+
+  <script> 
+    function findConclusions(){
+      document.getElementById('demo').innerHTML = "file succesfully uploaded <br>";
+      // data is JSON file in input.
+      var table = JSON.parse(myfile);
+      var n = table.length;
+      var temperature = new Array(n);
+      var isPressureAnomaly = new Array(n);
+      var isOmegaAnomaly = new Array(n);
+      var theta = [37.811319519, -4.25575173e-01, 7.58577888e-02,
+                  1.42666456e-04, -2.62249329e-05, -1.72135172e-03, 1.23122872e-06,
+                  2.36201691e-05, -1.74902913e-08]
+
+      // theta found using trained ML model
+
+      for(var i = 0; i < n;++i){
+        // calculate temperature using theta's 
+        var press = table[i]["Pressure"];
+        var rpm = table[i]["RPM"];
+        var time = table[i]["_time"];
+
+        temperature[i] += theta[0];
+        temperature[i] += thetha[1]*press;
+        temperature[i] += thetha[2]*rpm;
+        temperature[i] += thetha[3]*time;
+        temperature[i] += thetha[4]*rpm*rpm;
+        temperature[i] += thetha[5]*press*rpm;
+        temperature[i] += thetha[6]*press*rpm*rpm;
+        temperature[i] += thetha[7]*press*press*rpm;
+        temperature[i] += thetha[8]*press*press*rpm*rpm;
+        // find if Pressure is Anomaly 
+
+        // find if Umega is Anomaly 
+      }
+    }
+  </script>
 
   <footer class="page-footer blue darken-4 center" style="padding-bottom: 15px;">
       Made with <span class="red-text">&#10084;</span> by Team NPCompete<br>IIT Kharagpur</a>
