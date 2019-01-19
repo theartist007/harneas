@@ -5,6 +5,23 @@ def percentage_accuracy(Y_predicted, Y_actual):
 		error_per=error_per+abs(Y_predicted[i]-Y_actual[i])/(Y_actual[i])
 
 	return 100-(error_per*100/(number_of_terms))
+
+def predict(opt_intercept, opt_theta, X_test):
+	Y_test_predicted=[]
+
+	no_of_features=len(X_test[0])
+
+	for features in X_test:
+		
+		ans=opt_intercept
+		for i in range(no_of_features):
+			ans=ans+(features[i]*opt_theta[i])
+		
+		Y_test_predicted.append(ans)
+
+	return Y_test_predicted
+
+
 def calculate_cost(Y_predicted, Y_actual):
 
 	cost=0
@@ -14,77 +31,112 @@ def calculate_cost(Y_predicted, Y_actual):
 
 	return (cost/(number_of_terms))
 
+
+
+
+
 from sklearn.preprocessing import StandardScaler
 import csv
 import random
 from sklearn import linear_model
-
 import matplotlib.pyplot as plt
 
 
-data_1 = list(csv.reader(open("data1.csv")))
-data_2 = list(csv.reader(open("data2.csv")))
-
-header=data_1[0]
-
-core_data_1=data_1[1:]
-core_data_2=data_2[1:]
-
-core_data=core_data_1+core_data_2
 
 
-random.seed(45)
-random.shuffle(core_data)
+data_train=list(csv.reader(open("data_train.csv")))
+data_cv=list(csv.reader(open("data_cv.csv")))
+data_test=list(csv.reader(open("data_test.csv")))
 
-dimension_1=len(core_data)
-dimension_2=len(core_data[0])
+
+header=data_train[0]
+
+data_train=data_train[1:]
+data_cv=data_cv[1:]
+data_test=data_test[1:]
+
+
+dimension_1=len(data_train)
+dimension_2=len(data_train[0])
 
 for i in range(dimension_1):
 	for j in range(dimension_2):
-		core_data[i][j]=int(core_data[i][j])
+		data_train[i][j]=int(data_train[i][j])
 
-core_data=[list(i) for i in zip(*core_data)]
+dimension_1=len(data_cv)
+dimension_2=len(data_cv[0])
 
-Y_full=core_data[-1]
-X_full=core_data[:-1]
+for i in range(dimension_1):
+	for j in range(dimension_2):
+		data_cv[i][j]=int(data_cv[i][j])
 
-X_full=[list(i) for i in zip(*X_full)]
+dimension_1=len(data_test)
+dimension_2=len(data_test[0])
 
-size_full=len(Y_full)
+for i in range(dimension_1):
+	for j in range(dimension_2):
+		data_test[i][j]=int(data_test[i][j])
 
-X_training=X_full[:int(0.7*size_full)]
-X_cv=X_full[int(0.7*size_full):int(0.9*size_full)]
-X_test=X_full[int(0.9*size_full):]
 
-Y_training=Y_full[:int(0.7*size_full)]
-Y_cv=Y_full[int(0.7*size_full):int(0.9*size_full)]
-Y_test=Y_full[int(0.9*size_full):]
 
+data_train=[list(i) for i in zip(*data_train)]
+data_cv=[list(i) for i in zip(*data_cv)]
+data_test=[list(i) for i in zip(*data_test)]
+
+
+X_train=data_train[:-1]
+Y_train=data_train[-1]
+
+X_cv=data_cv[:-1]
+Y_cv=data_cv[-1]
+
+X_test=data_test[:-1]
+Y_test=data_test[-1]
+
+X_train=[list(i) for i in zip(*X_train)]
+X_cv=[list(i) for i in zip(*X_cv)]
+X_test=[list(i) for i in zip(*X_test)]
+
+#TESTED TILL HERE
+'''
 scaler = StandardScaler()
 scaler.fit(X_training)
 
 X_training=scaler.transform(X_training)
 X_cv=scaler.transform(X_cv)
 X_test=scaler.transform(X_test)
-
+'''
 alphas=[x*0.1 for x in range(0, 20)]
 opt_cost=-1
 
 for alpha in alphas:
-	#print(alpha)
-	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=False, copy_X=True)
-	reg.fit(X_training, Y_training)
+	print(alpha)
+	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=True, copy_X=True)
+	reg.fit(X_train, Y_train)
 
 	Y_cv_predicted=reg.predict(X_cv)
 
 	this_alpha_cost=calculate_cost(Y_cv_predicted, Y_cv)
-	#print(this_alpha_cost, end="\n\n")
+	print(this_alpha_cost, end="\n\n")
 	if(this_alpha_cost<opt_cost or opt_cost==-1):
 		opt_alpha=alpha
 		opt_cost=this_alpha_cost
 		opt_theta=reg.coef_
+		opt_intercept=reg.intercept_
 
+print(opt_alpha)
+print(opt_intercept)
+print(opt_theta)
+
+#print(list(zip(Y_test, predict(opt_intercept, opt_theta, X_test))))
+Y_test_predicted=predict(opt_intercept, opt_theta, X_test)
+print(percentage_accuracy(Y_test_predicted, Y_test))
+
+
+'''
 Y_test_predicted=reg.predict(X_test)
+'''
+
 '''
 print(opt_theta)
 
@@ -92,6 +144,8 @@ print(calculate_cost(Y_test_predicted, Y_test))
 
 for i in range(len(Y_test)):
 	print(f'{Y_test_predicted[i]} {Y_test[i]}')
+'''
+
 '''
 print("The accuracy of prediction is:")
 print(percentage_accuracy(Y_test_predicted, Y_test))
@@ -104,6 +158,8 @@ print(scaler.mean_)
 
 print(scaler.transform([[18,	1665,	430,	2772225,	29970,	49900050,	539460,	898200900]]))
 print(reg.predict(scaler.transform([[18,	1665,	430,	2772225,	29970,	49900050,	539460,	898200900]])))
+'''
+
 '''
 
 print(X_training)
