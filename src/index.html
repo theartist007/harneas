@@ -87,7 +87,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">As per ISHKS joint registry, around 427,181 hip arthroplasty surgeries were done last year, all around the world.</h5>
+          <h5 class="header col s12 light">As per ISHKS, around 427,181 hip arthroplasty surgeries were done last year, all around the world.</h5>
         </div>
       </div>
     </div>
@@ -99,12 +99,13 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <input type = "file" name = "myfile" data-supported-extensions = "json" > <br>
+          <h5><i class="mdi-content-send brown-text"></i>Upload your file here</h5>
+          <p>Please upload the input JSON file from your system, on which you would like to see our analysis. For real-time sensors, it has to be ensured that the data is fed here automatically.</p><br>
+          <center><input type = "file" name = "jsonfile" data-supported-extensions = "json" id="jsonfile"><br></center>
           <button type= "button" onclick = "findConclusions()">Submit </button>
           <p id = "demo"> </p>
           
-          <!--Insert your JS related code here !-->
+          <div id="tablearea"> </div>
           
         </div>
       </div>
@@ -116,7 +117,8 @@
     function findConclusions(){
       document.getElementById('demo').innerHTML = "file succesfully uploaded <br>";
       // data is JSON file in input.
-      var table = JSON.parse(myfile);
+      var myfile= document.getElementById("jsonfile").files[0];
+      var table = JSON.parse(JSON.stringify(myfile));		//table is an object here
       var n = table.length;
       var temperature = new Array(n);
       var isPressureAnomaly = new Array(n);
@@ -145,6 +147,40 @@
         // find if Pressure is Anomaly 
 
         // find if Umega is Anomaly 
+
+        //Insert table in html
+		var tablearea = document.getElementById('tablearea');
+		var viewtable = document.createElement('viewtable');
+		var tr = [];
+		
+		for (var i = 0; i < n; i++){
+		    tr[i] = document.createElement('tr');   
+		    	var slno = document.createElement('td');
+				var pressure = document.createElement('td');
+				var omega = document.createElement('td');
+				var temp = document.createElement('td');
+				var alert = document.createElement('td');
+				var slnotext = document.createTextNode(i+1);
+				var pressuretext = document.createTextNode(table[i]["Pressure"]);
+				var omegatext = document.createTextNode(table[i]["RPM"]);
+				var temptext = document.createTextNode(temperature[i]);
+				if(temperature[i]>=52)	
+					var alerttext = document.createTextNode("Alert");
+				else
+					var alerttext = document.createTextNode("");
+		        slno.appendChild(slnotext);
+		        pressure.appendChild(pressuretext);
+		        omega.appendChild(omegatext);
+		        temp.appendChild(temptext);
+		        alert.appendChild(alerttext);
+		        tr[i].appendChild(slno);
+		        tr[i].appendChild(pressure);
+		        tr[i].appendChild(omega);
+		        tr[i].appendChild(temp);
+		        tr[i].appendChild(alert);          
+		    viewtable.appendChild(tr[i]);
+		}
+		tablearea.appendChild(viewtable);
       }
     }
   </script>
