@@ -1,4 +1,10 @@
+def percentage_accuracy(Y_predicted, Y_actual):
+	number_of_terms=len(Y_predicted)
+	error_per=0
+	for i in range(number_of_terms):
+		error_per=error_per+abs(Y_predicted[i]-Y_actual[i])/(Y_actual[i])
 
+	return 100-(error_per*100/(number_of_terms))
 def calculate_cost(Y_predicted, Y_actual):
 
 	cost=0
@@ -8,10 +14,13 @@ def calculate_cost(Y_predicted, Y_actual):
 
 	return (cost/(number_of_terms))
 
-
+from sklearn.preprocessing import StandardScaler
 import csv
 import random
 from sklearn import linear_model
+
+import matplotlib.pyplot as plt
+
 
 data_1 = list(csv.reader(open("data1.csv")))
 data_2 = list(csv.reader(open("data2.csv")))
@@ -23,6 +32,8 @@ core_data_2=data_2[1:]
 
 core_data=core_data_1+core_data_2
 
+
+random.seed(45)
 random.shuffle(core_data)
 
 dimension_1=len(core_data)
@@ -49,31 +60,51 @@ Y_training=Y_full[:int(0.7*size_full)]
 Y_cv=Y_full[int(0.7*size_full):int(0.9*size_full)]
 Y_test=Y_full[int(0.9*size_full):]
 
+scaler = StandardScaler()
+scaler.fit(X_training)
+
+X_training=scaler.transform(X_training)
+X_cv=scaler.transform(X_cv)
+X_test=scaler.transform(X_test)
+
 alphas=[x*0.1 for x in range(0, 20)]
 opt_cost=-1
 
 for alpha in alphas:
-	print(alpha)
-	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=True, copy_X=True)
+	#print(alpha)
+	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=False, copy_X=True)
 	reg.fit(X_training, Y_training)
 
 	Y_cv_predicted=reg.predict(X_cv)
 
 	this_alpha_cost=calculate_cost(Y_cv_predicted, Y_cv)
-	print(this_alpha_cost, end="\n\n")
+	#print(this_alpha_cost, end="\n\n")
 	if(this_alpha_cost<opt_cost or opt_cost==-1):
 		opt_alpha=alpha
 		opt_cost=this_alpha_cost
 		opt_theta=reg.coef_
 
+Y_test_predicted=reg.predict(X_test)
+'''
 print(opt_theta)
 
-Y_test_predicted=reg.predict(X_test)
 print(calculate_cost(Y_test_predicted, Y_test))
 
 for i in range(len(Y_test)):
 	print(f'{Y_test_predicted[i]} {Y_test[i]}')
 '''
+print("The accuracy of prediction is:")
+print(percentage_accuracy(Y_test_predicted, Y_test))
+
+print(reg.intercept_)
+print(opt_theta)
+print(opt_alpha)
+print(scaler.scale_)
+print(scaler.mean_)
+
+print(scaler.transform([[21,	1657,	1320	,2745649	,34797,	57658629	,730737,	1210831209]]))
+'''
+
 print(X_training)
 print("---------------------")
 print(Y_training)

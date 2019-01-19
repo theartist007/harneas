@@ -47,11 +47,11 @@ with open("data1.csv", "w") as target:
 	target.write(f'P,')
 	target.write(f'S,')
 	target.write(f'T,')
-	target.write(f'S^2')
-	target.write(f'PxS')
-	target.write(f'Px(S^2)')
-	target.write(f'(P^2) xS')
-	target.write(f'(P^2) x (S^2)')
+	target.write(f'S^2,')
+	target.write(f'PxS,')
+	target.write(f'Px(S^2),')
+	target.write(f'(P^2) xS,')
+	target.write(f'(P^2) x (S^2),')
 	target.write(f'Temp\n')
 
 	for dic in data:
@@ -85,11 +85,11 @@ with open("data2.csv", "w") as target:
 	target.write(f'P,')
 	target.write(f'S,')
 	target.write(f'T,')
-	target.write(f'S^2')
-	target.write(f'PxS')
-	target.write(f'Px(S^2)')
-	target.write(f'P^2 xS')
-	target.write(f'P^2 x S^2')
+	target.write(f'S^2,')
+	target.write(f'PxS,')
+	target.write(f'Px(S^2),')
+	target.write(f'P^2 xS,')
+	target.write(f'P^2 x S^2,')
 	target.write(f'Temp\n')
 
 	for dic in data:
