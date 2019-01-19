@@ -36,50 +36,54 @@ def time_diff(time_later, time_earlier):
 	return 10+time_elapsed[0] + time_elapsed[1]*60 + time_elapsed[2]*3600
 
 
-
+import os
 import json
 filesets=[ ["DS1.json", "DS2.json", "DS3.json", "DS4.json" ], ["DS5.json"], ["DS7.json"]]
 target_names=["data_train.csv", "data_cv.csv", "data_test.csv"]
 i=0
-for files in filesets:
-	with open(target_names[i], "a") as target:
 
-		i=i+1
+if(os.path.isfile("data_train.csv") or os.path.isfile("data_cv.csv") or os.path.isfile("data_test.csv")):
+	print("DATA FILES ALREADY EXIST! PLEASE DELETE EXISTING FILES FIRST!")
+else:
+	for files in filesets:
+		with open(target_names[i], "a") as target:
 
-		target.write(f'P,')
-		target.write(f'S,')
-		target.write(f'T,')
-		target.write(f'S^2,')
-		target.write(f'PxS,')
-		target.write(f'Px(S^2),')
-		target.write(f'(P^2) xS,')
-		target.write(f'(P^2) x (S^2),')
-		target.write(f'Temp\n')
+			i=i+1
 
-		for file in files:
-			fileptr=open(file, "r")
-			base_time=-1
-			data=json.loads(fileptr.read())
+			target.write(f'P,')
+			target.write(f'S,')
+			target.write(f'T,')
+			target.write(f'S^2,')
+			target.write(f'PxS,')
+			target.write(f'Px(S^2),')
+			target.write(f'(P^2) xS,')
+			target.write(f'(P^2) x (S^2),')
+			target.write(f'Temp\n')
 
-			for dic in data:
-				pres=dic["Pressure"]
-				rpm=dic["RPM"]
-				time_current=dic["_time"]
-				temp=dic["Temperature"]
-					
-				if(base_time==-1):
-					base_time=time_current
+			for file in files:
+				fileptr=open(file, "r")
+				base_time=-1
+				data=json.loads(fileptr.read())
 
-				time_elapsed=time_diff(time_current, base_time)
+				for dic in data:
+					pres=dic["Pressure"]
+					rpm=dic["RPM"]
+					time_current=dic["_time"]
+					temp=dic["Temperature"]
+						
+					if(base_time==-1):
+						base_time=time_current
+
+					time_elapsed=time_diff(time_current, base_time)
 
 
-				target.write(f'{pres},')
-				target.write(f'{rpm},')
-				target.write(f'{time_elapsed},')
-				target.write(f'{rpm*rpm},')
-				target.write(f'{pres*rpm},')
-				target.write(f'{pres*rpm*rpm},')
-				target.write(f'{pres*pres*rpm},')
-				target.write(f'{pres*pres*rpm*rpm},')
-				target.write(f'{temp}\n')
+					target.write(f'{pres},')
+					target.write(f'{rpm},')
+					target.write(f'{time_elapsed},')
+					target.write(f'{rpm*rpm},')
+					target.write(f'{pres*rpm},')
+					target.write(f'{pres*rpm*rpm},')
+					target.write(f'{pres*pres*rpm},')
+					target.write(f'{pres*pres*rpm*rpm},')
+					target.write(f'{temp}\n')
 
