@@ -124,13 +124,14 @@ for alpha in alphas:
 		opt_theta=reg.coef_
 		opt_intercept=reg.intercept_
 
-print(opt_alpha)
-print(opt_intercept)
-print(opt_theta)
+print('Optimum ALPHA= {}'.format(opt_alpha))
+print('Optimum INTERCEPT= {}'.format(opt_intercept))
+print('Optimum THETA= {}'.format(opt_theta))
 
 #print(list(zip(Y_test, predict(opt_intercept, opt_theta, X_test))))
 Y_test_predicted=predict(opt_intercept, opt_theta, X_test)
-print(percentage_accuracy(Y_test_predicted, Y_test))
+print('\nThe accuracy of the used test set is: {}'.format(percentage_accuracy(Y_test_predicted, Y_test)))
+
 
 
 '''
