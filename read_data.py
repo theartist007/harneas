@@ -43,7 +43,7 @@ target_names=["data_train.csv", "data_cv.csv", "data_test.csv"]
 i=0
 
 if(os.path.isfile("data_train.csv") or os.path.isfile("data_cv.csv") or os.path.isfile("data_test.csv")):
-	print("DATA FILES ALREADY EXIST! PLEASE DELETE EXISTING FILES FIRST!")
+	print("DATA FILES ALREADY EXIST! ")
 else:
 	for files in filesets:
 		with open(target_names[i], "a") as target:
@@ -86,4 +86,4 @@ else:
 					target.write(f'{pres*pres*rpm},')
 					target.write(f'{pres*pres*rpm*rpm},')
 					target.write(f'{temp}\n')
-
+print("YOUR DATA IS READY!")

@@ -106,7 +106,7 @@ X_training=scaler.transform(X_training)
 X_cv=scaler.transform(X_cv)
 X_test=scaler.transform(X_test)
 '''
-alphas=[x*0.1 for x in range(0, 20)]
+alphas=[x*0.1 for x in range(0, 50)]
 opt_cost=-1
 
 for alpha in alphas:
@@ -133,6 +133,21 @@ Y_test_predicted=predict(opt_intercept, opt_theta, X_test)
 print('\nThe accuracy of the used test set is: {}'.format(percentage_accuracy(Y_test_predicted, Y_test)))
 
 
+print('\n\nGenerating DoctorsManual.csv ...')
+import numpy as np
+
+#file=open("DoctorsManual.csv", "w")
+
+lines=[["Pressure", "Approximate_Safe_RPM"]]
+
+for P in range(10, 32):
+	print(P)
+	coeff=[P*P*opt_theta[7] + P*opt_theta[5] + opt_theta[3], opt_theta[6]*P*P + opt_theta[4]*P + opt_theta[1], opt_theta[0]*P + opt_intercept -60 ]
+	print(np.roots(coeff))
+	print()
+
+
+print("DoctorsManual.csv written succesfully")
 
 '''
 Y_test_predicted=reg.predict(X_test)
