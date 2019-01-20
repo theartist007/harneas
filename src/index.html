@@ -20,6 +20,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html" class=" white-text">Home</a></li>
         <li><a href="about.html" class=" white-text">About Us</a></li>
+        <li><a href="doctor.html" class=" white-text">Doctor's Manual</a></li>
         <li><a href="scope.html" class=" white-text">Future Scope</a></li>
       </ul>
     </div>
@@ -28,6 +29,7 @@
   	<img src="assets/logo.png" class="responsive-img">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
+    <li><a href="doctor.html">Doctor's Manual</a></li>
     <li><a href="scope.html">Future Scope</a></li>
   </ul>
 
@@ -172,8 +174,11 @@ console.log(table[c]['Temperature']);
 
         //Insert table in html
 		var tablearea = document.getElementById('tablearea');
-		var viewtable = document.createElement('viewtable');
-
+		var viewtable = document.createElement('table');
+		viewtable.classList.add('striped');
+		viewtable.classList.add('responsive-table');
+		viewtable.classList.add('highlight');
+		viewtable.classList.add('centered');
 		var thead = document.createElement('thead');
 		var tr = document.createElement('tr');
 		var th1= document.createElement('th'); 
@@ -215,7 +220,7 @@ console.log(table[c]['Temperature']);
 				var cortemptext = document.createTextNode(table[i]["Temperature"]);
 				
 				if(temperature[i]>=50)	{
-					var alerttext = document.createTextNode("Alert");
+					var alerttext = document.createTextNode("ALERT !!");
 					c++;
 				}
 				else
