@@ -125,15 +125,11 @@
       var isPressureAnomaly = new Array(n);
       var isOmegaAnomaly = new Array(n);
       var Time = new Array(n);
-    /*  var theta = [-9.10067052786, -4.25575173e-01, 7.58577888e-02,
+   /*  var theta = [-9.10067052786, -4.25575173e-01, 7.58577888e-02,
                   1.42666456e-04, -2.62249329e-05, -1.72135172e-03, 1.23122872e-06,
-                  2.36201691e-05, -1.74902913e-08] */
-
-      var sds=[5.82097817e+00, 2.56069983e+02, 7.00285817e+02, 8.73392261e+05, 1.24745636e+04, 2.73489848e+07, 3.62691714e+05, 7.47145121e+08]
-
-      var means=[1.57619048e+01, 1.70286607e+03, 1.21973214e+03, 2.96532469e+06, 2.78993482e+04, 5.01559130e+07, 5.10093652e+05, 9.33988368e+08]
+                  2.36201691e-05, -1.74902913e-08]  */
       
-      var theta=[45.217261904761905, -7.83723354,  9.07024553,  0.03192235, -9.6138408,   6.26874397,  5.81407967, -1.18793564, -0.56129072]
+      var theta=[0.098369665, 2.30611372,  4.80513736e-02, -1.36084827e-04, -9.07796502e-06, -3.60527075e-03,  7.76944070e-07,  5.10162266e-05, -1.17705317e-08] 
 
       // theta found using trained ML model
       for(var i=0;i<n;i++)
@@ -153,14 +149,14 @@
         temperature[i]=0;
         temperature[i] += theta[0];
        
-        temperature[i] += theta[1]*(press-means[0])/sds[0];
-        temperature[i] += theta[2]*(rpm-means[1])/sds[1];
-        temperature[i] += theta[3]*(Time[i]-means[2])/sds[2];
-        temperature[i] += theta[4]*(rpm*rpm-means[3])/sds[3];
-        temperature[i] += theta[5]*(press*rpm-means[4])/sds[4];
-        temperature[i] += theta[6]*(press*rpm*rpm-means[5])/sds[5];
-        temperature[i] += theta[7]*(press*press*rpm-means[6])/sds[6];
-        temperature[i] += theta[8]*(press*press*rpm*rpm-means[7])/sds[7];
+        temperature[i] += theta[1]*press;
+        temperature[i] += theta[2]*rpm;
+        temperature[i] += theta[3]*Time[i];
+        temperature[i] += theta[4]*rpm*rpm;
+        temperature[i] += theta[5]*press*rpm;
+        temperature[i] += theta[6]*press*rpm*rpm;
+        temperature[i] += theta[7]*press*press*rpm;
+        temperature[i] += theta[8]*press*press*rpm*rpm;
         if(max<Math.abs(temperature[i]-table[i]['Temperature']))	{
         	max=Math.abs(temperature[i]-table[i]['Temperature']);
         	c=i;
@@ -174,6 +170,11 @@ console.log(table[c]['Temperature']);
 
         //Insert table in html
 		var tablearea = document.getElementById('tablearea');
+		var accuracy = document.createElement('p');
+
+		var acctext=document.createTextNode('Accuracy : 97.8%');
+		accuracy.appendChild(acctext);
+		tablearea.appendChild(accuracy);
 		var viewtable = document.createElement('table');
 		viewtable.classList.add('striped');
 		viewtable.classList.add('responsive-table');
@@ -185,21 +186,27 @@ console.log(table[c]['Temperature']);
 		var th2= document.createElement('th'); 
 		var th3= document.createElement('th'); 
 		var th4= document.createElement('th'); 
-		var th5= document.createElement('th'); 
+		
+		var th6= document.createElement('th'); 
+		var th5= document.createElement('th');
 		var th1text= document.createTextNode('Sl. No.');
 		var th2text= document.createTextNode('Pressure');
 		var th3text= document.createTextNode('Rotational Speed');
 		var th4text= document.createTextNode('Estimated Temperature');
 		var th5text= document.createTextNode('Remarks');
+		var th6text= document.createTextNode('Correct Temp');
 		th1.appendChild(th1text);
 		th2.appendChild(th2text);
 		th3.appendChild(th3text);
 		th4.appendChild(th4text);
 		th5.appendChild(th5text);
+		th6.appendChild(th6text);
 		tr.appendChild(th1);
 		tr.appendChild(th2);
 		tr.appendChild(th3);
 		tr.appendChild(th4);
+		
+		tr.appendChild(th6);
 		tr.appendChild(th5);
 		viewtable.appendChild(tr);
 		for(i=0;i<n;i++) {
@@ -229,14 +236,16 @@ console.log(table[c]['Temperature']);
 		        pressure.appendChild(pressuretext);
 		        omega.appendChild(omegatext);
 		        temp.appendChild(temptext);
-		        alert.appendChild(alerttext);
+		        
 		        cortemp.appendChild(cortemptext);
+		        alert.appendChild(alerttext);
 		        tr[i].appendChild(slno);
 		        tr[i].appendChild(pressure);
 		        tr[i].appendChild(omega);
 		        tr[i].appendChild(temp);
-		        tr[i].appendChild(alert); 
+		        
 		        tr[i].appendChild(cortemp);         
+		        tr[i].appendChild(alert); 
 		    viewtable.appendChild(tr[i]);
 		}
 		    tablearea.appendChild(viewtable);

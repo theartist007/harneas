@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 
-TOL_PER=12.5
+TOL_PER=0
 
 def getMyu(vector):
 	return sum(vector)/len(vector)
