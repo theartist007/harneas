@@ -1,4 +1,4 @@
-# Siemens Mindsphere Hackathon 2019 (Team NPCompete)
+# Hip Arthroplasty Necrosis Avoidance System
 ![HARNEAS logo](src/assets/logo.png)
 
 ## Contributing
