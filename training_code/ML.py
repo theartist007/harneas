@@ -43,11 +43,11 @@ import matplotlib.pyplot as plt
 
 
 
-
-data_train=list(csv.reader(open("../data_train.csv")))
-data_cv=list(csv.reader(open("../data_cv.csv")))
-data_test=list(csv.reader(open("../data_test.csv")))
-
+print("Loading Data... ")
+data_train=list(csv.reader(open("../final_data/data_train.csv")))
+data_cv=list(csv.reader(open("../final_data/data_cv.csv")))
+data_test=list(csv.reader(open("../final_data/data_test.csv")))
+print("Data successfully loaded!")
 
 header=data_train[0]
 
@@ -78,7 +78,7 @@ for i in range(dimension_1):
 		data_test[i][j]=int(data_test[i][j])
 
 
-
+print("Extracting X and Y features")
 data_train=[list(i) for i in zip(*data_train)]
 data_cv=[list(i) for i in zip(*data_cv)]
 data_test=[list(i) for i in zip(*data_test)]
@@ -97,6 +97,8 @@ X_train=[list(i) for i in zip(*X_train)]
 X_cv=[list(i) for i in zip(*X_cv)]
 X_test=[list(i) for i in zip(*X_test)]
 
+print("Successfully generated!")
+
 #TESTED TILL HERE
 '''
 scaler = StandardScaler()
@@ -110,20 +112,24 @@ alphas=[x*0.1 for x in range(0, 50)]
 opt_cost=-1
 
 for alpha in alphas:
-	print(alpha)
+	if(int(alpha)==alpha):
+		print("Training ... ")
+	#print(alpha)
 	reg = linear_model.Ridge(alpha=alpha, fit_intercept=True, normalize=True, copy_X=True)
 	reg.fit(X_train, Y_train)
 
 	Y_cv_predicted=reg.predict(X_cv)
 
 	this_alpha_cost=calculate_cost(Y_cv_predicted, Y_cv)
-	print(this_alpha_cost, end="\n\n")
+	#print(this_alpha_cost, end="\n\n")
 	if(this_alpha_cost<opt_cost or opt_cost==-1):
 		opt_alpha=alpha
 		opt_cost=this_alpha_cost
 		opt_theta=reg.coef_
 		opt_intercept=reg.intercept_
 
+print()
+print()
 print('Optimum ALPHA= {}'.format(opt_alpha))
 print('Optimum INTERCEPT= {}'.format(opt_intercept))
 print('Optimum THETA= {}'.format(opt_theta))
@@ -132,7 +138,7 @@ print('Optimum THETA= {}'.format(opt_theta))
 Y_test_predicted=predict(opt_intercept, opt_theta, X_test)
 print('\nThe accuracy of the used test set is: {}'.format(percentage_accuracy(Y_test_predicted, Y_test)))
 
-
+'''
 print('\n\nGenerating DoctorsManual.csv ...')
 import numpy as np
 
@@ -148,6 +154,7 @@ for P in range(10, 32):
 
 
 print("DoctorsManual.csv written succesfully")
+'''
 
 '''
 Y_test_predicted=reg.predict(X_test)

@@ -2,12 +2,19 @@ import matplotlib.pyplot as plt
 import numpy as np 
 import pandas as pd 
 from numpy import genfromtxt
+import shutil
+import os
 
-my_data = genfromtxt('data1.csv', delimiter = ',');
+shutil.rmtree('../graphs')
+os.mkdir('../graphs')
+
+my_data = genfromtxt('../final_data/data_train.csv', delimiter = ',');
 press = []
 rpm = []
 time = []
 temp = []
+
+
 
 firstRow = 0;
 for l in my_data:
@@ -37,12 +44,12 @@ for i in range(0, deg) :
 			if(i != 0 or j != 0 or k != 0) : 
 				x_axis = p + q + s;
 				x_axis = x_axis[:-1];
-				print(x_axis);
+				print(x_axis+" generated");
 				#plot and save graph
 				plt.plot(a*b*c, temp);
 				plt.xlabel(x_axis);
 				plt.ylabel('TEMP');
-				plt.savefig(x_axis + '.jpg')
+				plt.savefig('../graphs/'+x_axis + '.jpg')
 				plt.gcf().clear();
 			s += "TIMEx";
 			c = c * time;

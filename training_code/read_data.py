@@ -38,13 +38,13 @@ def time_diff(time_later, time_earlier):
 
 import os
 import json
-filesets=[ ["../datasets/DS1.json", "../datasets/DS2.json", "../datasets/DS3.json", "../datasets/DS4.json" ], ["../datasets/DS5.json"], ["../datasets/DS7.json"]]
-target_names=["../data_train.csv", "../data_cv.csv", "../data_test.csv"]
+filesets=[ ["../raw_data/DS1.json", "../raw_data/DS2.json", "../raw_data/DS3.json", "../raw_data/DS4.json" ], ["../raw_data/DS5.json"], ["../raw_data/DS7.json"]]
+target_names=["../final_data/data_train.csv", "../final_data/data_cv.csv", "../final_data/data_test.csv"]
 i=0
-
-if(os.path.isfile("../data_train.csv") or os.path.isfile("../data_cv.csv") or os.path.isfile("../data_test.csv")):
+if(os.path.isdir("../final_data")):
 	print("DATA FILES ALREADY EXIST! ")
 else:
+	os.mkdir("../final_data", 0o755)
 	for files in filesets:
 		with open(target_names[i], "a") as target:
 

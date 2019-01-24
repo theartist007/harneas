@@ -57,9 +57,9 @@ def calc_Fscore(Y_predicted, Y_actual):
 		return 0
 
 
-data_train=list(csv.reader(open("../data_train.csv")))
-data_cv=list(csv.reader(open("../data_cv.csv")))
-data_test=list(csv.reader(open("../data_test.csv")))
+data_train=list(csv.reader(open("../final_data/data_train.csv")))
+data_cv=list(csv.reader(open("../final_data/data_cv.csv")))
+data_test=list(csv.reader(open("../final_data/data_test.csv")))
 
 
 header=data_train[0]
